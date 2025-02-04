@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #28282B;
+    color: white;
+}
+
+.header {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.first-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reset-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.move-icon {
+    height: 50px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #28282B;
+    color: white;
+    border-radius: 100px;
+    padding: 30px;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+button:hover {
+    box-shadow: 0 2px 5px rgb(255, 172, 28);
+}
+
+.reset-button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(236, 88, 0);
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+.reset-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 5px rgb(255, 117, 24);
+    opacity: 1;
+}
+
+.js-score {
+    margin-top: 30px;
+}
+
+.js-result {
+    font-weight: bold;
+    margin-top: 10px;
+}

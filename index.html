@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <p class="header">Rock Paper Scissors</p>
+    <div class="first-box">
+        <button onclick="
+        const computerMove = pickComputerMove();
+
+        results('rock', computerMove);  
+    "><img src="assets/rock-emoji.png" class="move-icon"></button>
+    <button onclick="
+        computerMove = pickComputerMove();
+
+        results('paper', computerMove);  
+    "><img src="assets/paper-emoji.png" class="move-icon"></button>
+    <button onclick="
+        computerMove = pickComputerMove();
+
+        results('scissors', computerMove);        
+    "><img src="assets/scissors-emoji.png" class="move-icon"></button>
+    </div>
+    <div class="box1">
+        <p class="js-result"></p>
+    </div>
+    <div class="box2">
+        <p class="js-moves"></p>
+    </div>
+    <div class="box3">
+        <p class="js-score"></p>
+    </div>
+    <div class="reset-box">
+        <button onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+
+    localStorage.removeItem('score');
+    document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+    document.querySelector('.js-result').innerHTML = '';
+    document.querySelector('.js-moves').innerHTML = '';
+    " class="reset-button">Reset Score</button>
+    </div>
+</body>
+</html>
